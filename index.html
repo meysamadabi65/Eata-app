@@ -3,12 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>برنامک ایتا</title>
+    <title>برنامک من</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: #f2f4f7;
+            color: #222;
+        }
+
+        .app {
+            max-width: 500px;
+            min-height: 100vh;
+            margin: auto;
+            background: white;
+            padding: 25px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 12px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
 
-<h1>سلام 👋</h1>
-<p>برنامک ایتای من آماده است.</p>
+<div class="app">
+
+    <h1>برنامک ایتا</h1>
+
+    <button onclick="hello()">
+        شروع
+    </button>
+
+</div>
+
+<script>
+function hello() {
+    alert("سلام! برنامک با موفقیت اجرا شد.");
+}
+</script>
 
 </body>
 </html>
